@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czas i data</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../scripts/timedate.js" type="text/javascript"></script>
+    <script src="../scripts/kolorujtlo.js" type="text/javascript"></script>
+</head>
+<body onload="startclock()"  style="background-image: none;">
+    <!-- MENU LEWE -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../index.html"> Strona główna</a></li>
+            <li><a href="gry.html"> Gry w serii</a></li>
+            <li><a href="battles.html"> Formaty walk</a></li>
+            <li><a href="types.html"> Typy pokemonów</a></li>
+            <li><a href="turnieje.html"> Turnieje</a></li>
+            <li><a href="timedate.html"> Czas i data</a></li>
+            <li><a href="animacje.html"> Animacje</a></li>
+        </ul>
+    </div>
+
+    <!-- GŁÓWNA TREŚĆ -->
+    <div class="content">
+        <h1>Czas i data</h1>
+        <p>Na tej stronie możesz sprawdzić aktualny czas i datę, a także dostosować kolory tła strony według swoich preferencji.</p>
+
+        <div class="clock-section">
+            <h2>Aktualny czas i data</h2>
+            <div id="zegarek" class="clock-display"></div>
+            <div id="data" class="date-display"></div>
+        </div>
+
+        <div class="color-controls">
+            <h2>Zmień kolor tła</h2>
+            <p>Kliknij na jeden z przycisków poniżej, aby zmienić kolor tła strony:</p>
+            <form method="POST" name="background" class="color-form">
+                <div class="color-buttons">
+                    <input type="button" value="żółty" onclick="changeBackground('#FFFF00')" class="color-btn">
+                    <input type="button" value="czarny" onclick="changeBackground('#000000')" class="color-btn">
+                    <input type="button" value="biały" onclick="changeBackground('#FFFFFF')" class="color-btn">
+                    <input type="button" value="zielony" onclick="changeBackground('#00FF00')" class="color-btn">
+                    <input type="button" value="niebieski" onclick="changeBackground('#0000FF')" class="color-btn">
+                    <input type="button" value="pomarańczowy" onclick="changeBackground('#FF8000')" class="color-btn">
+                    <input type="button" value="szary" onclick="changeBackground('#C0C0C0')" class="color-btn">
+                    <input type="button" value="czerwony" onclick="changeBackground('#FF0000')" class="color-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Adam Ornacki</p>
+        <p>175291</p>
+    </footer>
+</body>
+</html>
