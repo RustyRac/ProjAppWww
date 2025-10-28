@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacje jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- MENU LEWE -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../index.html"> Strona główna</a></li>
+            <li><a href="gry.html"> Gry w serii</a></li>
+            <li><a href="battles.html"> Formaty walk</a></li>
+            <li><a href="types.html"> Typy pokemonów</a></li>
+            <li><a href="turnieje.html"> Turnieje</a></li>
+            <li><a href="timedate.html"> Czas i data</a></li>
+            <li><a href="animacje.html"> Animacje</a></li>   
+        </ul>
+    </div>
+
+    <!-- GŁÓWNA TREŚĆ -->
+    <div class="content">
+        <h1>Animacje jQuery</h1>
+        <p>Na tej stronie możesz przetestować różne animacje jQuery. Kliknij na elementy poniżej, aby zobaczyć efekty animacji.</p>
+
+        <div class="animation-section">
+            <h2>Animacje testowe</h2>
+            
+            <div id="animacjaTestowa1" class="test-block">kliknij, a się powiększe</div>
+
+            <div id="animacjaTestowa2" class="test-block">
+                Najedź kursorem, a się powiększe
+            </div>
+            
+            <div id="animacjaTestowa3" class="test-block">
+                Klikaj, abym urósł
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Adam Ornacki</p>
+        <p>175291</p>
+    </footer>
+
+    <script>
+        $("#animacjaTestowa1").on("click", function() {
+            $(this).animate({
+                width: "500px",
+                opacity: 0.4,
+                fontsize: "3em",
+                borderWidth: "10px"
+            }, 1500);
+        });
+    </script>
+    
+    <script>
+        $("#animacjaTestowa2").on({
+            "mouseover": function() {
+                $(this).animate({
+                    width: 300
+                }, 800);
+            },
+            "mouseout": function() {
+                $(this).animate({
+                    width: 200
+                }, 800);
+            }
+        });
+    </script>
+    
+    <script>
+        $("#animacjaTestowa3").on("click", function() {
+            if (!$(this).is(":animated")) {
+                $(this).animate({
+                    width: "+=" + 50,
+                    height: "+="+ 10,
+                    opacity: "+=" + 0.1,
+                    duration: 3000
+                });
+            }
+        });
+    </script>
+</body>
+</html>

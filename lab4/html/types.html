@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typy Pokémonów</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <!-- MENU LEWE -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../index.html"> Strona główna</a></li>
+            <li><a href="gry.html"> Gry w serii</a></li>
+            <li><a href="battles.html"> Formaty walk</a></li>
+            <li><a href="types.html"> Typy pokemonów</a></li>
+            <li><a href="turnieje.html"> Turnieje</a></li>
+            <li><a href="timedate.html"> Czas i data</a></li>
+            <li><a href="animacje.html"> Animacje</a></li>
+        </ul>
+    </div>
+
+    <!-- GŁÓWNA TREŚĆ -->
+    <div class="content">
+        <h1>Typy Pokémonów</h1>
+        <p>Każdy Pokémon i każdy atak ma przypisany <strong>typ</strong>. Znajomość zależności między typami jest kluczem do skutecznej walki.</p>
+
+        <table class="types-table">
+            <thead>
+                <tr>
+                    <th>Typ</th>
+                    <th>Słabości (przyjmuje mocniej)</th>
+                    <th>Odporności (przyjmuje słabiej)</th>
+                    <th>Niewrażliwości</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="type"><img src="../img/types/Normal.png" alt="Normal" class="type-icon">Normal</td>
+                    <td>Fighting</td>
+                    <td>—</td>
+                    <td>Ghost</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Fire.png" alt="Fire" class="type-icon">Fire</td>
+                    <td>Water, Ground, Rock</td>
+                    <td>Fire, Grass, Ice, Bug, Steel, Fairy</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Water.png" alt="Water" class="type-icon">Water</td>
+                    <td>Electric, Grass</td>
+                    <td>Fire, Water, Ice, Steel</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Grass.png" alt="Grass" class="type-icon">Grass</td>
+                    <td>Fire, Ice, Poison, Flying, Bug</td>
+                    <td>Water, Grass, Electric, Ground</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Electric.png" alt="Electric" class="type-icon">Electric</td>
+                    <td>Ground</td>
+                    <td>Electric, Flying, Steel</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Ice.png" alt="Ice" class="type-icon">Ice</td>
+                    <td>Fire, Fighting, Rock, Steel</td>
+                    <td>Ice</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Fighting.png" alt="Fighting" class="type-icon">Fighting</td>
+                    <td>Psychic, Flying, Fairy</td>
+                    <td>Bug, Rock, Dark</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Poison.png" alt="Poison" class="type-icon">Poison</td>
+                    <td>Ground, Psychic</td>
+                    <td>Grass, Fighting, Poison, Bug, Fairy</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Ground.png" alt="Ground" class="type-icon">Ground</td>
+                    <td>Water, Grass, Ice</td>
+                    <td>Poison, Rock</td>
+                    <td>Electric</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Flying.png" alt="Flying" class="type-icon">Flying</td>
+                    <td>Electric, Ice, Rock</td>
+                    <td>Grass, Fighting, Bug</td>
+                    <td>Ground</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Psychic.png" alt="Psychic" class="type-icon">Psychic</td>
+                    <td>Bug, Ghost, Dark</td>
+                    <td>Fighting, Psychic</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Bug.png" alt="Bug" class="type-icon">Bug</td>
+                    <td>Fire, Flying, Rock</td>
+                    <td>Grass, Fighting, Ground</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Rock.png" alt="Rock" class="type-icon">Rock</td>
+                    <td>Water, Grass, Fighting, Ground, Steel</td>
+                    <td>Normal, Fire, Poison, Flying</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Ghost.png" alt="Ghost" class="type-icon">Ghost</td>
+                    <td>Ghost, Dark</td>
+                    <td>Poison, Bug</td>
+                    <td>Normal, Fighting</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Dragon.png" alt="Dragon" class="type-icon">Dragon</td>
+                    <td>Ice, Dragon, Fairy</td>
+                    <td>Fire, Water, Grass, Electric</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Dark.png" alt="Dark" class="type-icon">Dark</td>
+                    <td>Fighting, Bug, Fairy</td>
+                    <td>Ghost, Dark</td>
+                    <td>Psychic</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Steel.png" alt="Steel" class="type-icon">Steel</td>
+                    <td>Fire, Fighting, Ground</td>
+                    <td>Normal, Grass, Ice, Flying, Psychic, Bug, Rock, Dragon, Steel, Fairy</td>
+                    <td>Poison</td>
+                </tr>
+                <tr>
+                    <td class="type"><img src="../img/types/Fairy.png" alt="Fairy" class="type-icon">Fairy</td>
+                    <td>Poison, Steel</td>
+                    <td>Fighting, Bug, Dark</td>
+                    <td>Dragon</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="note">Uwaga: Tabela pokazuje modyfikatory obrażeń dla obrony danego typu (co zadaje mu więcej/ mniej obrażeń). Podwójne typy łączą efekty obu typów.</p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Adam Ornacki</p>
+        <p>175291</p>
+    </footer>
+  </body>
+  </html>
+
