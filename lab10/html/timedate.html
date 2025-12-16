@@ -1,0 +1,25 @@
+        <h1>Czas i data</h1>
+        <p>Na tej stronie możesz sprawdzić aktualny czas i datę, a także dostosować kolory tła strony według swoich preferencji.</p>
+
+        <div class="clock-section">
+            <h2>Aktualny czas i data</h2>
+            <div id="zegarek" class="clock-display"></div>
+            <div id="data" class="date-display"></div>
+        </div>
+
+        <div class="color-controls">
+            <h2>Zmień kolor tła</h2>
+            <p>Kliknij na jeden z przycisków poniżej, aby zmienić kolor tła strony:</p>
+            <form method="POST" name="background" class="color-form">
+                <div class="color-buttons">
+                    <input type="button" value="żółty" onclick="changeBackground('#FFFF00')" class="color-btn">
+                    <input type="button" value="czarny" onclick="changeBackground('#000000')" class="color-btn">
+                    <input type="button" value="biały" onclick="changeBackground('#FFFFFF')" class="color-btn">
+                    <input type="button" value="zielony" onclick="changeBackground('#00FF00')" class="color-btn">
+                    <input type="button" value="niebieski" onclick="changeBackground('#0000FF')" class="color-btn">
+                    <input type="button" value="pomarańczowy" onclick="changeBackground('#FF8000')" class="color-btn">
+                    <input type="button" value="szary" onclick="changeBackground('#C0C0C0')" class="color-btn">
+                    <input type="button" value="czerwony" onclick="changeBackground('#FF0000')" class="color-btn">
+                </div>
+            </form>
+        </div>
